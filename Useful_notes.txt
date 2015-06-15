@@ -1,0 +1,37 @@
+# To read CSV files and assign it to object 
+CSVFile <- read.csv("YourDirectory/YourCSVFile.csv")
+
+# To see the header of your CSV file
+head(CSVFile)
+
+# OR 
+names(CSVFile)
+
+# To see the first 2 row of file
+head(CSVFile, 2)
+
+# To know the dimension of your CSV file
+dim(CSVFile)
+
+# To know type of your CSV file
+str(CSVFile)
+
+#To subset from your CSV file
+CSVFile[NumberOfRows, ColumnNameOrNumber]
+
+# To create subset of your data with condition 
+CSVFile[which(CSVFile$ColumnName == YouCondition), ColumnName]
+
+#Example:
+andy[which(andy$Day == 30), "Weight"]
+
+# To list all the files in directory
+files <- list.files("YourDirectory", full.names= TRUE)
+
+# To access specfic file in your files directory. 
+files[numberOfFile Or Name]
+
+
+
+
+
